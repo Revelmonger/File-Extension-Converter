@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>File Extension Converter</title>
+    <script src="qrc:///qtwebchannel/qwebchannel.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <h1 class="app-title">File Extension Converter</h1>
+        <div class="section-mb">
+            <label for="folderPath">Select Folder:</label>
+            <div class="input-group">
+                <input type="text" id="folderPath" placeholder="Enter folder path or click browse" readonly />
+                <button id="directorySelectorButton" class="btn btn-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" width="20px" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" />
+                    </svg>
+                    Browse
+                </button>
+            </div>
+        </div>
+        <div class="grid-cols-2">
+            <div>
+                <label for="fromExtensionension">From Extension:</label>
+                <input type="text" id="fromExtensionension" placeholder="e.g., .txt" />
+            </div>
+            <div>
+                <label for="toExtensionension">To Extension:</label>
+                <input type="text" id="toExtensionension" placeholder="e.g., .log" />
+            </div>
+        </div>
+        <div class="button-group">
+            <button id="clearBtn" class="btn btn-secondary">
+                Clear
+            </button>
+            <button id="convertButton" class="btn btn-primary" disabled>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" width="20px" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"
+                        clip-rule="evenodd" />
+                </svg>
+                Convert
+            </button>
+        </div>
+        <div id="statusMessage">
+            Please select a folder and enter extensions to begin
+        </div>
+    </div>
+</body>
+</html>
