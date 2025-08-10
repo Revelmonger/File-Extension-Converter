@@ -2,7 +2,6 @@
 A desktop app to convert all files in a chosen directory from one file extension to another.
 
 ![](documentation/screenshot.png)
- 
 ## Installation and Running
 1. Install [Python 3.11.9](https://www.python.org/downloads/release/python-3119/), checking "Add Python to PATH".
 2. Download `File-Extension-Converter-main.zip` from here(https://github.com/Revelmonger/File-Extension-Converter/archive/refs/heads/main.zip) and extract its contents.
