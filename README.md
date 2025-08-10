@@ -1,5 +1,5 @@
 # File-Extension-Converter
-A desktop app to convert all files in a chosen directory from one file extension to another.
+A tool to convert all files in a directory from one file extension to another.
 
 ![](documentation/screenshot.png)
 ## Installation and Running
