@@ -1,4 +1,3 @@
-
 let handler = null
 
 document.addEventListener("DOMContentLoaded", function () {
